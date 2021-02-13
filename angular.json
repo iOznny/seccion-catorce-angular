@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "seccion-catorce-angular"
+    }
+  },
+  "defaultProject": "seccion-catorce-angular",
+  "cli": {
+    "analytics": false
+  }
 }
