@@ -27,6 +27,10 @@ export class MoviesService {
     }
   }
 
+  resetCatalogue() {
+    this.page_movies = 1;
+  }
+
   getCatalogue(): Observable<Movie[]> {
     if(this.loadingAPI) {
       return of([]);
