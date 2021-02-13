@@ -20,10 +20,10 @@
           </li>
         </ul>
         
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar pelicula" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+        <div class="d-flex">
+          <input #search (keyup.enter)="searchMovie(search.value)" class="form-control me-2" type="search" placeholder="Buscar pelicula" aria-label="Search">
+          <button (click)="searchMovie(search.value)" class="btn btn-outline-success" type="submit">Buscar</button>
+        </div>
       </div>
     </div>
 </nav>

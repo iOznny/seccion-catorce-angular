@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ComponentsModule } from '../components/components.module';
 
 import { HomeComponent } from './home/home.component';
 import { MoviesComponent } from './movies/movies.component';
@@ -12,7 +13,8 @@ import { SearchComponent } from './search/search.component';
     SearchComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ]
 })
 
