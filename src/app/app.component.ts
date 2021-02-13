@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-import { Catalogue } from './interfaces/catalogue';
-import { MoviesService } from './services/movies.service';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,11 +8,7 @@ import { MoviesService } from './services/movies.service';
 
 export class AppComponent {
 
-  constructor(private moviesSV: MoviesService) {
-    this.moviesSV.getCatalogue().subscribe( resp => {
-      console.log(resp);
-    });
+  constructor() {
   }
-
 
 }
