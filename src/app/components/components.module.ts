@@ -9,12 +9,14 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { PosterGridComponent } from './poster-grid/poster-grid.component';
 
 import { PipesModule } from '../pipes/pipes.module';
+import { CreditsSlideShowComponent } from './credits-slide-show/credits-slide-show.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     SlideshowComponent,
-    PosterGridComponent
+    PosterGridComponent,
+    CreditsSlideShowComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { PipesModule } from '../pipes/pipes.module';
   exports: [
     NavbarComponent,
     SlideshowComponent,
-    PosterGridComponent
+    PosterGridComponent,
+    CreditsSlideShowComponent
   ]
 })
 

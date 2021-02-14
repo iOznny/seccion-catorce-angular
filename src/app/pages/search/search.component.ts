@@ -8,6 +8,7 @@ import { MoviesService } from 'src/app/services/movies.service';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
+
 export class SearchComponent implements OnInit {
 
   public text: string = '';
