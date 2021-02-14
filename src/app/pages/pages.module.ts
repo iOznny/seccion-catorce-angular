@@ -6,6 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { MoviesComponent } from './movies/movies.component';
 import { SearchComponent } from './search/search.component';
 
+import { PipesModule } from '../pipes/pipes.module';
+import { RatingModule } from 'ng-starrating';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -14,7 +17,9 @@ import { SearchComponent } from './search/search.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    PipesModule,
+    RatingModule
   ]
 })
 
